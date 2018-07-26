@@ -1,2 +1,2 @@
-# technical-individual
-website template for individual techinical clubs
+# Electronics Club Website
+website creted using bootstrap4, vuejs
