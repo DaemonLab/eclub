@@ -1,0 +1,12 @@
+sudo: false
+language: generic
+addons:
+  ssh_known_hosts: people.iiti.ac.in
+before_install:
+  - openssl enc -aes-256-cbc -d -md md5 -in sshkey.pem.enc -out sshkey.pem -k $PASSWORD
+script:
+  - chmod 600 sshkey.pem
+  - rsync -rcve 'ssh -i sshkey.pem' . elecclub@people.iiti.ac.in:~/public_html/ --ignore-existing --exclude '.git/**' --delete-after
+branches:
+  only:
+    - master
