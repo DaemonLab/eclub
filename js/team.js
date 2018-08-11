@@ -1,36 +1,36 @@
 const members = [
   {
     id: 1,
-    name: "alpha",
-    description: "Competitive Coding",
+    name: "Suryaveer Singh",
+    description: "Scitech Secy",
     img: "img/team/matthew.png",
-    year: "First Year",
+    // contact: "9999999999",
+    year: "Fourth Year",
     linkGit: "",
     linkLin: ""
   },
   {
     id: 2,
-    name: "beta",
-    description: "Competitive Coding",
-    img: "img/team/molly.png",
-    year: "Second Year",
+    name: "Kumar Abhinav",
+    description: "Head, PClub\nSenior Member,EClub",
+    img: "img/team/matthew.png",
+    year: "Third Year",
     linkGit: "",
     linkLin: ""
   },
   {
     id: 3,
-    name: "gamma",
-    description: "Development",
-    img: "img/team/elyse.png",
-    contact: "9999999999",
-    year: "Second Year",
+    name: "Kanishk Sharma",
+    description: "Senior Member",
+    img: "img/team/matthew.png",
+    year: "Third Year",
     linkGit: "",
     linkLin: ""
   },
   {
     id: 4,
-    name: "alpha",
-    description: "Cyber Security",
+    name: "Rishikesh",
+    description: "Senior Member",
     img: "img/team/matthew.png",
     year: "Third Year",
     linkGit: "",
@@ -38,42 +38,106 @@ const members = [
   },
   {
     id: 5,
-    name: "alpha",
-    description: "Cyber Security",
+    name: "Saptarshi Gosh",
+    description: "Senior Member",
     img: "img/team/matthew.png",
-    year: "First Year",
+    year: "Third Year",
     linkGit: "",
     linkLin: ""
   },
   {
     id: 6,
-    name: "alpha",
-    description: "Development",
+    name: "Saurabh",
+    description: "Senior Member",
     img: "img/team/matthew.png",
-    year: "First Year",
+    year: "Third Year",
     linkGit: "",
     linkLin: ""
-  }
+  },
+  {
+    id: 7,
+    name: "Suyash",
+    description: "Senior Member",
+    img: "img/team/matthew.png",
+    year: "Third Year",
+    linkGit: "",
+    linkLin: ""
+  },
+  {
+    id: 8,
+    name: "Jubin Nagpal",
+    description: "Member",
+    img: "img/team/matthew.png",
+    year: "Second Year",
+    linkGit: "",
+    linkLin: ""
+  },
+  {
+    id: 11,
+    name: "Nemath",
+    description: "Member",
+    img: "img/team/matthew.png",
+    year: "Second Year",
+    linkGit: "",
+    linkLin: ""
+  },
+  {
+    id: 12,
+    name: "Prayag Jain",
+    description: "Member",
+    img: "img/team/matthew.png",
+    year: "Second Year",
+    linkGit: "",
+    linkLin: ""
+  },
+  {
+    id: 13,
+    name: "Saurabh Karkun",
+    description: "Member",
+    img: "img/team/matthew.png",
+    year: "Second Year",
+    linkGit: "",
+    linkLin: ""
+  },
+  {
+    id: 14,
+    name: "Shavez Malick",
+    description: "Member",
+    img: "img/team/matthew.png",
+    year: "Second Year",
+    linkGit: "",
+    linkLin: ""
+  },
+  {
+    id: 15,
+    name: "Vikram",
+    description: "Member",
+    img: "img/team/matthew.png",
+    year: "Second Year",
+    linkGit: "",
+    linkLin: ""
+  },
+
 ];
 
 const heads = [
   {
     id: 1,
-    name: "alpha",
+    name: "Sreevatsank",
     description: "Club Head",
     img: "img/team/matthew.png",
-    contact: "9999999999",
+    // contact: "9999999999",
     year: "Third Year",
     linkGit: "",
     linkLin: ""
   },
   {
     id: 2,
-    name: "beta",
-    description: "Club Head",
-    img: "img/team/molly.png",
-    contact: "9999999999",
-    year: "Third Year",
+    name: "Aniket Tiwary",
+    description: "Ex-Club Head",
+    img: "img/team/matthew.png",
+    // contact: "9999999999",
+    year: "Fourth Year",
     linkGit: "",
     linkLin: ""
   }
