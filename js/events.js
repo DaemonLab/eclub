@@ -1,7 +1,7 @@
-Vue.component("project-component", {
+Vue.component("event-component", {
   data: function() {
     return {
-      projects: [
+      events: [
         {
           id: 0,
           name: "Project Name",
@@ -29,27 +29,20 @@ Vue.component("project-component", {
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
           image: "img/project/VueLogo.png"
-        },
-        {
-          id: 4,
-          name: "Project Name5",
-          description:
-            "Test Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-          image: "img/project/VueLogo.png"
         }
       ]
     };
   },
   template: `
     <div class="team row">
-      <div class="col-lg-4 d-flex align-items-stretch" v-for="project in projects" :key="project.id">
+      <div class="col-lg-4 d-flex align-items-stretch" v-for="event in events" :key="event.id">
         <div class="card">
           <div class="profile-container">
             <img class="card-img-top" :src="project.image" alt="">
           </div>
           <div class="card-body">
-            <h3 class="card-title">{{project.name}}</h3>
-            <p class="card-text mb-2">{{project.description}}</p>
+            <h3 class="card-title">{{event.name}}</h3>
+            <p class="card-text mb-2">{{event.description}}</p>
             <a href="#"><i class="fab fa-github"></i> </a>
           </div>
         </div>
