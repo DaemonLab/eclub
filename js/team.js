@@ -6,7 +6,7 @@ const members = [
     img: "img/team/matthew.png",
     // contact: "9999999999",
     year: "Fourth Year",
-    linkGit: "",
+    linkGit: "https://github.com/surya-veer",
     linkLin: ""
   },
   {
@@ -15,7 +15,7 @@ const members = [
     description: "Head, PClub\nSenior Member,EClub",
     img: "img/team/matthew.png",
     year: "Third Year",
-    linkGit: "",
+    linkGit: "https://github.com/Abhinav2812",
     linkLin: ""
   },
   {
@@ -42,7 +42,7 @@ const members = [
     description: "Senior Member",
     img: "img/team/matthew.png",
     year: "Third Year",
-    linkGit: "",
+    linkGit: "https://github.com/Saptarshi-Ghosh-98",
     linkLin: ""
   },
   {
@@ -87,7 +87,7 @@ const members = [
     description: "Member",
     img: "img/team/matthew.png",
     year: "Second Year",
-    linkGit: "",
+    linkGit: "https://github.com/pjzzz",
     linkLin: ""
   },
   {
@@ -96,7 +96,7 @@ const members = [
     description: "Member",
     img: "img/team/matthew.png",
     year: "Second Year",
-    linkGit: "",
+    linkGit: "https://github.com/ksaurabh1729",
     linkLin: ""
   },
   {
@@ -105,7 +105,7 @@ const members = [
     description: "Member",
     img: "img/team/matthew.png",
     year: "Second Year",
-    linkGit: "",
+    linkGit: "https://github.com/Deep1Origins",
     linkLin: ""
   },
   {
@@ -128,7 +128,7 @@ const heads = [
     img: "img/team/matthew.png",
     // contact: "9999999999",
     year: "Third Year",
-    linkGit: "",
+    linkGit: "https://github.com/sreevatsank1999",
     linkLin: ""
   },
   {
@@ -154,8 +154,8 @@ Vue.component("member-component", {
     			<h5 class="card-title">{{member.name}}</h5>
 				  <p class="card-text">{{member.description}}</p>
 				  <p class="card-text mb-2">{{member.year}}</p>
-          <a :href="member.linkGit"><i class="fab fa-github"></i> </a>
-          <a :href="member.linkLin"><i class="fab fa-linkedin"></i> </a>
+          <a :href="member.linkGit" target="_blank"><i class="fab fa-github"></i> </a>
+          <a :href="member.linkLin" target="_blank"><i class="fab fa-linkedin"></i> </a>
   			</div>
 		</div>
 	</div>
@@ -176,8 +176,8 @@ Vue.component("head-component", {
 	    		<h5 class="card-title">{{head.name}}</h5>
 				  <p class="card-text">{{head.description}}</p>
 				  <p class="card-text mb-2">{{head.year}}</p>
-          <a :href="head.linkGit"><i class="fab fa-github"></i> </a>
-          <a :href="head.linkLin"><i class="fab fa-linkedin"></i> </a>
+          <a :href="head.linkGit" target="_blank"><i class="fab fa-github"></i> </a>
+          <a :href="head.linkLin" target="_blank"><i class="fab fa-linkedin"></i> </a>
   			</div>
 		</div>
 	</div>
