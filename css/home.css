@@ -82,7 +82,8 @@
 }
 
 #main {
-  background-image: url("/img/home/main.jpg");
+  /*background-image: url("/img/home/main.jpg");*/
+  background-image: url("../img/home/main.jpg");
   height: 100%;
 }
 
@@ -128,7 +129,8 @@
 }
 
 #secondary {
-  background-image: url("/img/home/other.jpg");
+  /*background-image: url("/img/home/other.jpg");*/
+  background-image: url("../img/home/other.jpg");
   height: 100%;
 }
 
