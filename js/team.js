@@ -7,25 +7,25 @@ const members = [
     // contact: "9999999999",
     year: "Fourth Year",
     linkGit: "https://github.com/surya-veer",
-    linkLin: ""
+    linkLin: "https://www.linkedin.com/in/suryaveer/"
   },
   {
     id: 2,
     name: "Kumar Abhinav",
     description: "Head, PClub\nSenior Member,EClub",
-    img: "img/team/matthew.png",
+    img: "https://avatars1.githubusercontent.com/u/10851701?s=400&v=4",
     year: "Third Year",
     linkGit: "https://github.com/Abhinav2812",
-    linkLin: ""
+    linkLin: "https://www.linkedin.com/in/kr-abhinav"
   },
   {
     id: 3,
     name: "Kanishk Sharma",
     description: "Senior Member",
-    img: "img/team/matthew.png",
+    img: "img/team/KanishkSharma.png",
     year: "Third Year",
-    linkGit: "",
-    linkLin: ""
+    linkGit: "https://github.com/Kanishaksharma11",
+    linkLin: "www.linkedin.com/in/kanishkasharma11"
   },
   {
     id: 4,
@@ -40,52 +40,52 @@ const members = [
     id: 5,
     name: "Saptarshi Gosh",
     description: "Senior Member",
-    img: "img/team/matthew.png",
+    img: "img/team/SaptarshiGhosh.png",
     year: "Third Year",
     linkGit: "https://github.com/Saptarshi-Ghosh-98",
-    linkLin: ""
+    linkLin: "https://www.linkedin.com/in/saptarshi-ghosh-2782b7168/"
   },
   {
     id: 6,
-    name: "Saurabh",
+    name: "Saurabh Sharma",
     description: "Senior Member",
-    img: "img/team/matthew.png",
+    img: "https://media.licdn.com/dms/image/C5103AQHJrifAfH2Wzg/profile-displayphoto-shrink_200_200/0?e=1540425600&v=beta&t=bA2ts-1VDPsuhvSa84OP82MCVCEnkt9gxMz82w-ocK0",
     year: "Third Year",
-    linkGit: "",
-    linkLin: ""
+    linkGit: "https://github.com/saurabhiiti123",
+    linkLin: "https://www.linkedin.com/in/saurabh-sharma-592ab8135/"
   },
   {
     id: 7,
-    name: "Suyash",
+    name: "Suyash Bhutara",
     description: "Senior Member",
-    img: "img/team/matthew.png",
+    img: "img/team/SuyashBhutara.png",
     year: "Third Year",
-    linkGit: "",
-    linkLin: ""
+    linkGit: "https://github.com/Suyash-Bhutara",
+    linkLin: "https://www.linkedin.com/in/suyash-bhutara-96786a148/"
   },
   {
     id: 8,
     name: "Jubin Nagpal",
     description: "Member",
-    img: "img/team/matthew.png",
+    img: "img/team/JubinNagpal.png",
     year: "Second Year",
-    linkGit: "",
-    linkLin: ""
+    linkGit: "https://github.com/jubinnagpal",
+    linkLin: "https://www.linkedin.com/in/jubin-n-78b32a120"
   },
   {
     id: 11,
-    name: "Nemath",
+    name: "Nemath Ahmed",
     description: "Member",
-    img: "img/team/matthew.png",
+    img: "img/team/NemathAhmed.png",
     year: "Second Year",
-    linkGit: "",
-    linkLin: ""
+    linkGit: "https://github.com/nemathahmed",
+    linkLin: "https://www.linkedin.com/in/nemath-ahmed-595b335a/"
   },
   {
     id: 12,
     name: "Prayag Jain",
     description: "Member",
-    img: "img/team/matthew.png",
+    img: "img/team/PrayagJain.png",
     year: "Second Year",
     linkGit: "https://github.com/pjzzz",
     linkLin: ""
@@ -103,19 +103,19 @@ const members = [
     id: 14,
     name: "Shavez Malick",
     description: "Member",
-    img: "img/team/matthew.png",
+    img: "https://avatars1.githubusercontent.com/u/32036974?s=400&v=4",
     year: "Second Year",
     linkGit: "https://github.com/Deep1Origins",
-    linkLin: ""
+    linkLin: "https://www.linkedin.com/in/shavez-malick-57a245165/"
   },
   {
     id: 15,
-    name: "Vikram",
+    name: "Vikram Kushwaha",
     description: "Member",
-    img: "img/team/matthew.png",
+    img: "https://avatars2.githubusercontent.com/u/32036969?s=400&u=8d73a41b708e124bda47542c0964572fa6a0b1e5&v=4",
     year: "Second Year",
-    linkGit: "",
-    linkLin: ""
+    linkGit: "https://github.com/rbnhd",
+    linkLin: "www.linkedin.com/in/vikram-kushwaha-47630a16b"
   },
 
 ];
@@ -125,7 +125,7 @@ const heads = [
     id: 1,
     name: "Sreevatsank",
     description: "Club Head",
-    img: "img/team/matthew.png",
+    img: "img/team/KSreevatsank.png",
     // contact: "9999999999",
     year: "Third Year",
     linkGit: "https://github.com/sreevatsank1999",
@@ -139,7 +139,7 @@ const heads = [
     // contact: "9999999999",
     year: "Fourth Year",
     linkGit: "",
-    linkLin: ""
+    linkLin: "https://www.linkedin.com/in/sreevatsank-k-285a37161/"
   }
 ];
 
