@@ -12,7 +12,7 @@ const members = [
   {
     id: 2,
     name: "Kumar Abhinav",
-    description: "Head, PClub\nSenior Member,EClub",
+    description: "Senior Member,EClub",
     img: "https://avatars1.githubusercontent.com/u/10851701?s=400&v=4",
     year: "Third Year",
     linkGit: "https://github.com/Abhinav2812",
