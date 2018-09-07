@@ -19,6 +19,66 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG"
         crossorigin="anonymous">
+<style>
+        .blog-content {
+            max-height: 100px;
+            overflow: hidden;
+            position: relative;
+        }
+        #blogposts {
+            overflow-x: hidden;
+        }
+        .blog-content:after {
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white 90%);
+            content: "";
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4em;
+        }
+        .blog-content>figure>img {
+            width: 100%;
+        }
+        .modal-body>figure>img {
+            width: 100%;
+        }
+        .modal-body>figure>figure>img {
+            width: 100%;
+        }
+        @media only screen and (min-width: 600px) {
+            .mybeautifulclass {
+                max-height: 10em;
+                overflow: hidden;
+            }
+            .blog-content {
+                font-size: 0.7em;
+            }
+            .cute-btn {
+                padding-left: 3em;
+                padding-right: 3em;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            .card:hover {
+                transform: scale(1.0) !important;
+            }
+            .display-3 {
+                font-size: 4em;
+            }
+            .cute-btn {
+                display: block;
+                width: 100%;
+                text-align: center;
+                border-radius: 0px !important;
+            }
+        }
+        .cute-btn {
+            border-radius: 0px !important;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    </style>
 </head>
 
 <body>
@@ -62,28 +122,39 @@
                 <rect width="48" height="12" fill="white"></rect>
             </svg>
             <h1 class="display-3 text-white">From The Blog</h1>
+		<blog-component-modal v-for="post in posts" :post="post"></blog-component-modal>
+<div class="row" id="blog" style="justify-content: center;">
+                <blog-component v-for="post in posts" v-if="posts.length" :post="post"></blog-component>
+                <img style="width:25%" v-if="!posts.length" src="img/loading.svg" alt="">
+            </div>
             <div class="row">
-                <div class="col-lg-4" v-on:click="openblog(4)">
-                    <div class="card">
-                        <img class="card-img-top" src="img/home/blog/ImageProcessingNemathMedium.png" alt="">
-                        <div class="card-body">
-                            <h3 class="card-title">A brief Introduction to Computer Vision Technology</h3>
-                            <p class="card-text">Computer vision is the process of using machines to understand and analyze visual content. While the algorithms have been around in various forms since the 1960’s, recent advances......
-                            <i class="align-text-bottom fas fa-external-link-alt"></i>
-                        </div>
-                    </div>
+                <div class="col-md-3 offset-md-10">
+                    <br>
+                    <a target="_blank" href="https://medium.com/elecclub-iit-indore/" class="btn btn-primary btn-lg cute-btn">See More</a>
                 </div>
-                <!-- <div class="col-lg-4" v-on:click="openblog(1)"> -->
-                <div class="col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="img/home/blog/2.png" alt="">
-                        <div class="card-body">
-                            <h3 class="card-title">Stay tuned....</h3>
-                            <p class="card-text">for more such articles</p>
-                            <!-- <i class="align-text-bottom fas fa-external-link-alt"></i> -->
-                        </div>
-                    </div>
-                </div>
+            </div>
+            <!--<div class="row">-->
+                <!--<div class="col-lg-4" v-on:click="openblog(4)">-->
+                    <!--<div class="card">-->
+                        <!--<img class="card-img-top" src="img/home/blog/ImageProcessingNemathMedium.png" alt="">-->
+                        <!--<div class="card-body">-->
+                            <!--<h3 class="card-title">A brief Introduction to Computer Vision Technology</h3>-->
+                            <!--<p class="card-text">Computer vision is the process of using machines to understand and analyze visual content. While the algorithms have been around in various forms since the 1960’s, recent advances......-->
+                            <!--<i class="align-text-bottom fas fa-external-link-alt"></i>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--[> <div class="col-lg-4" v-on:click="openblog(1)"> <]-->
+                <!--<div class="col-lg-4">-->
+                    <!--<div class="card">-->
+                        <!--<img class="card-img-top" src="img/home/blog/2.png" alt="">-->
+                        <!--<div class="card-body">-->
+                            <!--<h3 class="card-title">Stay tuned....</h3>-->
+                            <!--<p class="card-text">for more such articles</p>-->
+                            <!--[> <i class="align-text-bottom fas fa-external-link-alt"></i> <]-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
                 <!-- <div class="col-lg-4" v-on:click="openblog(2)">
                     <div class="card">
                         <img class="card-img-top" src="img/home/blog/3.png" alt="">
@@ -94,7 +165,7 @@
                         </div>
                     </div>
                 </div> -->
-            </div>
+            <!--</div>-->
         </div>
     </div>
     <div class="container-fluid parallax" id="secondary">
@@ -182,8 +253,10 @@
             </ul>
         </div>
     </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="vendor/vue/vue.js"></script>
     <script src="js/home.js"></script>
+    <script src="js/blog.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
