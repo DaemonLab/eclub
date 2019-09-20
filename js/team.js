@@ -114,6 +114,15 @@ const members = [
 const heads = [
   {
     id: 1,
+    name: "Shavez Malick",
+    description: "Club Head",
+    img: "https://avatars1.githubusercontent.com/u/32036974?s=400&v=4",
+    year: "Third Year",
+    linkGit: "https://github.com/Deep1Origins",
+    linkLin: "https://www.linkedin.com/in/shavez-malick-57a245165/"
+  },
+  {
+    id: 2,
     name: "Sreevatsank",
     description: "Ex-Club Head",
     img: "img/team/KSreevatsank.png",
@@ -121,15 +130,6 @@ const heads = [
     year: "Fourth Year",
     linkGit: "https://github.com/sreevatsank1999",
     linkLin: ""
-  },
-  {
-    id: 2,
-    name: "Shavez Malick",
-    description: "Club Head",
-    img: "https://avatars1.githubusercontent.com/u/32036974?s=400&v=4",
-    year: "Third Year",
-    linkGit: "https://github.com/Deep1Origins",
-    linkLin: "https://www.linkedin.com/in/shavez-malick-57a245165/"
   },
   {
     id: 3,
